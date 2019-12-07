@@ -1,0 +1,228 @@
+<style>
+body{
+    text-align: center;
+    background-image: url("https://i.redd.it/m729stzuo0341.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+  
+    
+}
+#survey-form{
+    margin: auto;
+    width: 900px;
+    }
+
+.row-tab{
+    display: block;
+    padding-top: 20px ;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}   
+
+.lable-pizza{
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    
+
+}
+
+.input-pizza{
+    display: inline-block;
+    width: 48%;
+    text-align: left;
+}
+.select-input{
+    display: inline-block;
+    width: 48%;
+    text-align: left;
+}
+.lable-select{
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    
+}
+
+.lable-radio{
+
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    vertical-align: top;
+}
+
+.input-radio{
+    display: inline-block;
+    width: 48%;
+    text-align: left;
+}
+.lable-checkboxes{
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    vertical-align: top;
+
+}
+
+.input-checkboxes{
+    display: inline-block;
+    width: 48%;
+    text-align: left;
+}
+
+#title{
+    font-style: italic;
+}
+
+
+</style>
+
+<html>
+    <head>
+        <title>Survey Form</title>
+    </head>
+
+<Body>
+    
+
+
+
+<h1 id="title">
+   Cheesy Pizza Survey Form
+</h1>
+<form id="survey-form">
+    <div class="row-tab">
+<div class="lable-pizza">
+    <label>
+    Name:
+    </label>
+</div>
+<div class="input-pizza">
+<input type="text" placeholder="Name">
+</div>
+    </div> 
+
+      <div class="row-tab">
+<div class="lable-pizza">
+    <label>
+    Age:
+    </label>
+</div>
+<div class="input-pizza">
+<input type="number" placeholder="Age">
+</div>
+    </div> 
+
+    <div class="row-tab">
+            <div class="lable-pizza">
+                <label>
+              Email:
+                </label>
+            </div>
+            <div class="input-pizza">
+            <input type="number" placeholder="Email">
+            </div>
+                </div> 
+
+    <div class="row-tab">
+        <div class="lable-select">
+            <label>Select Fav Sauce: </label>
+        </div>
+
+        <div class="select-input">
+                <select>
+                        <option value="volvo">BBQ</option>
+                        <option value="saab">Chilli</option>
+                        <option value="fiat">Mayo</option>
+                        <option value="audi">Ketchup</option>
+                </select>
+
+        </div>
+        <div class="row-tab">
+         <div class="lable-radio">
+             <label>
+                 Locations:
+             </label>
+
+         </div>
+         <div class="input-radio">
+        <div><label>
+                India
+                <input type="radio" name="location">
+
+            
+        </label>
+        </div>
+        <div>
+        <label>
+                China
+                <input type="radio" name="location">
+
+            
+        </label>
+        </div>
+        <div>
+
+        <label>
+                Germany
+                <input type="radio" name="location">
+
+            
+        </label>
+        </div>
+
+
+         </div>
+
+        </div>
+        <div class="row-tab">
+            <div class="lable-checkboxes">
+                <label>
+                     Bread:
+                </label>
+            </div>
+            <div class="input-checkboxes">
+                <div>
+                    <label>White
+                        <input type="checkbox" value="sad">
+
+                    </label>
+                </div>
+                <div>
+                        <label>Brown
+                            <input type="checkbox" value="hi">
+    
+                        </label>
+                    </div>
+                    <div>
+                            <label>50/50
+                                <input type="checkbox" value="sdsd">
+        
+                            </label>
+                        </div>
+
+            </div>
+
+        </div>
+    
+        <div class="row-tab">
+            <div>
+                <textarea>
+                    Enter your comments up here.
+                </textarea>
+            
+            </div>
+
+        </div>
+        <div class="row-tab">
+            <button type="submit" style="padding: 10px;">
+                Submit
+            </button>
+        </div>
+    </div>
+
+</form>
+</Body>
+</html>
