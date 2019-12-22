@@ -1,0 +1,182 @@
+<style>
+    #main-doc {
+        scroll-behavior: smooth;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: medium;
+    }
+    
+    @media (max-width: 300px) {
+        .Content {
+            background-color: rgb(1, 236, 253);
+        }
+    }
+    
+    .Navigation {
+        height: 100%;
+        width: 20%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: black;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    
+    .Navigation a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .Navigation a:hover {
+        color: cyan;
+    }
+    
+    .Content {
+        margin-left: 20%;
+    }
+    
+    @media screen and (max-height: 450px) {
+        .Navigation {
+            padding-top: 15px;
+        }
+        .Navigation a {
+            font-size: 18px;
+        }
+    }
+</style>
+
+
+
+<main id="main-doc">
+    <div class="Content">
+        <section class="main-section" id="Introduction"></section>
+        <a name='Introduction'>
+            <header>
+                <h2>Introduction</h2>
+            </header>
+            <p>C++ is a cross-platform language that can be used to create high-performance applications.C++ was developed by Bjarne Stroustrup at Bell labs in 1979, as an extension to the C language.C++ gives programmers a high level of control over system
+                resources and memory.The language was updated 3 major times in 2011, 2014, and 2017 to C++11, C++14, and C++17.</p>
+            <p>C# is a general-purpose, modern and object-oriented programming language pronounced as “C sharp”. It was developed by Microsoft led by Anders Hejlsberg and his team within the .Net initiative and was approved by the European Computer Manufacturers
+                Association (ECMA) and International Standards Organization (ISO). C# is among the languages for Common Language Infrastructure and the current version of C# is version 7.2. C# is a lot similar to Java syntactically and is easy for the
+                users who have knowledge of C, C++ or Java.</p>
+
+            <section class="main-section" id="Declaring_variables"></section>
+            <a name='Declaring variables'>
+                <header>
+                    <h2>Declaring variables</h2>
+                </header>
+                <p>A variable is a name given to a storage area that is used to store values of various data types. Each variable in C# needs to have a specific type, which determines the size and layout of the variable's memory.For example, a variable can
+                    be of the type String, which means that it will be used to store a string value. Based on the data type, specific operations can be carried out on the variable.For instance, if we had an Integer variable, then operations such as addition
+                    and subtraction can be carried out on the variable. One can declare multiple variables in a program.</p>
+                <p>In C++ variable is used to store data in a memory location, which can be modified or used in the program during program execution.</p>
+                <p>Variables play a significant role in constructing a program, storing values in memory and dealing with them. Variables are required in various functions of every program. For example, when we check for conditions to execute a block of
+                    statements, variables are required. Again for iterating or repeating a block of the statement(s) several times, a counter variable is set along with a condition, or simply if we store the age of an employee, we need an integer type
+                    variable. So in every respect, the variable is used. In this tutorial, you will learn about how variables are declared in C++, how to assign values to them, and how to use them within a C++ program.</p>
+
+                <section class="main-section" id="C#_and_C++"></section>
+                <a name='C# and C++'>
+                    <header>
+                        <h2>C# and C++</h2>
+                    </header>
+                    <p>To fully comprehend the differences between C and C++, you need an understanding of what object-oriented programming is. The term object-oriented, as it relates to programming, originated at MIT in the late 50s or early 60s.Object-oriented
+                        programming (or OOP) uses a concept called “objects.” An object is an instance of a “class,” or a program-code-template. A class can be made up of data or code procedures (also known as methods).</p>
+                    <p>The original C programming language is not object-oriented, which is the most significant difference between the two. C is what’s called a “procedural” programming language, while C++ is a hybrid language that’s a combination of procedural
+                        and object-oriented.</p>
+
+                    <section class="main-section" id="Hello_world"></section>
+                    <a name='Hello world'>
+                        <header>
+                            <h2>Hello world</h2>
+                        </header>
+                        <p><code>
+        using namespace std;<br><br> int main()<br> {
+        <br> cout  "Hello, World!";<br> return 0;<br> }
+    </code></p>
+
+                        <section class="main-section" id="Some_C++_and_C#_codes"></section>
+                        <a name='Some C++ and C# codes'>
+                            <header>
+                                <h2>Some C++ and C# codes</h2>
+                            </header>
+                            <p>
+                                <h5>Simple program:</h5>
+                                <code>x = 5;<br>
+            y = 6;<br>
+            z = x + y;<br><br>
+        </code>
+                                <h5>To print number entered by the user:</h5>
+                                <code>using namespace std;<br>
+            int main()<br>
+            {<br>    
+                int number;<br>
+                cout  "Enter an integer: ";<br>
+                cin >> number;<br>
+                cout  "You entered "  number;<br>    
+                return 0;<br>
+            }<br><br></code>
+                                <h5>Addition of two numbers:</h5>
+                                <code>using namespace std;<br>
+            int main()<br>
+            {<br>
+                int firstNumber, secondNumber, sumOfTwoNumbers;<br><br>
+                
+                cout  "Enter two integers: ";<br>
+                cin >> firstNumber >> secondNumber;<br>
+                sumOfTwoNumbers = firstNumber + secondNumber;<br>
+                cout  firstNumber  " + "   secondNumber  " = "  sumOfTwoNumbers;<br>     
+                return 0;<br>
+            }<br><br></code>
+                                <h5>To find quotient and remainder:</h5>
+                                <code>
+            using namespace std;<br>
+            int main()<br>
+            {<br>
+                int divisor, dividend, quotient, remainder;<br>
+                cout  "Enter dividend: ";<br>
+                cin >> dividend;<br>
+                cout  "Enter divisor: ";<br>
+                cin >> divisor;<br>
+                quotient = dividend / divisor;<br>
+                remainder = dividend % divisor;<br>
+                cout  "Quotient = "  quotient endl;<br>
+                cout  "Remainder = "  remainder;<br>
+                return 0;
+            }
+        </code>
+                            </p>
+                            <section class="main-section" id="Features"></section>
+                            <a name='Features'>
+                                <header>
+                                    <h2>Features</h2>
+                                </header>
+                                <p>
+                                    <ul>
+                                        <li>Simple.</li>
+                                        <li>Machine Independent or Portable.</li>
+                                        <li>Mid-level programming language.</li>
+                                        <li>Structured programming language</li>
+                                        <li>Rich Library.</li>
+                                    </ul>
+                                </p>
+    </div>
+    <div class="Navigation">
+        <nav id="navbar">
+            <header>
+                <h3>C++ Documentation</h3>
+            </header>
+            <p class="nav-link"></p><a href="#Introduction">Introduction</a></p><br>
+            <p class="nav-link"></p><a href="#Declaring variables">Declaring variables</a></p><br>
+            <p class="nav-link"></p><a href="#C# and C++">C# and C++</a></p><br>
+            <p class="nav-link"></p><a href="#Hello world">Hello world</a></p><br>
+            <p class="nav-link"></p><a href="#Some C++ and C# codes">Some C++ and C# codes</a></p><br>
+            <p class="nav-link"></p><a href="#Features">Features</a></p><br>
+        </nav>
+    </div>
+
+
+</main>
