@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keyframe 2</title>
+    <style>
+        body {
+            background: #333;
+        }
+        
+        .box {
+            background: #fff;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            top: 0;
+            left: 200px;
+            border-radius: 50%;
+            background: black;
+            animation: animate1 5s forwards 1s ease-in-out infinite;
+        }
+        
+        @keyframes animate1 {
+            /* 25% {
+                top: 0px;
+                left: 300px;
+                background: red;
+                border-radius: 50% 0 0 0;
+            }
+            50% {
+                top: 300px;
+                left: 300px;
+                background: greenyellow;
+                border-radius: 50% 50% 0 0;
+            }
+            75% {
+                top: 300px;
+                left: 0px;
+                background: blue;
+                border-radius: 50% 50% 50% 0;
+            }
+            100% {
+                top: 0px;
+                left: 0px;
+                background: white;
+                border-radius: 50%;
+            } */
+            25% {
+                top: 300px;
+                left: 300px;
+                box-shadow: 10px 10px 20px red, -10px -10px 20px red;
+            }
+            50% {
+                top: 300px;
+                left: 100px;
+                box-shadow: 10px 10px 20px greenyellow, -10px -10px 20px greenyellow;
+            }
+            75% {
+                top: 0px;
+                left: 200px;
+                box-shadow: 10px 10px 20px blue, -10px -10px 20px blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
