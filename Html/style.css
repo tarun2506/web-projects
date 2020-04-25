@@ -1,0 +1,47 @@
+/* Selector{
+  Property: value;
+} */
+
+h1,
+p {
+    text-align: center;
+    border: 5px solid rgba(255, 65, 0, 0.5);
+    cursor: pointer;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 70px;
+    font-style: italic;
+}
+
+img {
+    float: left;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
+body {
+    background-image: url(background.jpg);
+    color: #ffffff;
+    background-size: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+    text-decoration: underline;
+}
